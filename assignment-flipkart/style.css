@@ -1,0 +1,1043 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow-x: hidden;
+
+}
+body{
+    background-color: #D4D4D4;
+}
+/* top navbar */
+.navbar {
+    display: flex;
+    overflow: hidden;
+    background-color: royalblue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+
+}
+.navbar img{
+    height: 60px;
+    width: 160px;
+    margin-top: -5px;
+    margin-left: 12%;
+}
+.navbar .search-container{
+    margin-left: 1%;
+    margin-top: 6px;
+}
+
+.navbar .search-container form input[type=text]{
+    width: 480px;
+    height: 40px;
+    border: none;
+    background: white;
+    padding: 0px 0px 0px 10px;
+}
+.navbar .search-container form input[type=text]:focus{
+    outline: none !important;
+    border-color: gray;
+    box-shadow: 0 0 2px gray;
+    background: white;
+}
+.navbar .search-container form{
+    background: white;
+    padding: 0px 0px 0px 15px;
+}
+.fa-search:before {
+    content: "\f002";
+    color: royalblue;
+    padding: 8px 20px 0 20px;
+}
+ /* top right nav bar */
+.navbar .navbar-icons{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 12px;
+}
+.navbar .navbar-icons a {
+    color: white;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: sans-serif;
+
+    letter-spacing:1px;
+    margin-top: 6px;
+}
+.navbar .navbar-icons button {
+    background: white;
+    color: royalblue;
+    font-weight: 600;
+    font-size: 17px;
+    padding: 5px;
+    width: 120px;
+    height: 30px;
+    border: none;
+    margin-right: 20px;
+}
+
+/* Lower Nav Banner */
+.lower-bar{
+    display: flex;
+    background: white;
+    margin: 3.7% 0% 0% 0%;
+    padding-left: 5%;
+    padding-bottom: 13px;
+    width: 100%;
+    box-shadow:  0 0px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.lower-bar .category{
+    padding: 0px 50px 0px 20px;
+
+}
+.lower-bar .category img{
+    width: 70px;
+}
+.lower-bar .category h1{
+    font-size: 13px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* Top Banner */
+.banner-ads img{
+    width: 100%;
+    margin-top: 5px;
+    height: 350px;
+}
+
+
+/* Deal of the day */
+.deal-day{
+     display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.deal-day .main-div {
+    display: block;
+    margin: 5px 20px 0px 10px;
+    padding-top: 25px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.deal-day .main-div .deals-heading {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.deal-day .main-div .deals-heading button{
+    border: none;
+    text-transform: uppercase;
+    background-color: royalblue;
+    color: white;
+    height: 40px;
+    width: 100px;
+    padding: 5px;
+    position: static;
+    float: right;
+    margin-left: 655px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+.deal-day .main-div h1{
+    padding-left: 20px;
+    text-transform: capitalize;
+    font-size: 23px;
+}
+.deal-day .main-div p{
+   color: grey;
+    letter-spacing: 1px;
+}
+
+.deal-day .main-div .show-deals{
+    display: flex;
+    width: 100%;
+}
+
+.deal-day .main-div .show-deals .deal-child {
+   padding: 20px 30px 0 30px;
+
+}
+.deal-day .main-div .show-deals .deal-child img {
+
+    margin-bottom: 15px;
+}
+.deal-day .main-div .show-deals .deal-child:hover img {
+
+    margin-bottom: 15px;
+    transform: scale(1.1);
+    animation-fill-mode: forwards;
+    animation: img-pop 55ms ease;
+
+}
+
+@keyframes img-pop {      /* Animation pop img */
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+.deal-day .main-div .show-deals .deal-child h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.deal-day .main-div .show-deals .deal-child .green {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 13px;
+    color:green;
+    line-height: 3;
+}
+.deal-day .main-div .show-deals .deal-child .grey {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 13px;
+    color:grey;
+}
+
+
+.fa-clock-o:before {
+    content: "\f017";
+    padding-left: 20px;
+    color: chocolate;
+    font-size: 20px;
+
+}
+
+.deal-day .side-div{
+    width: 20%;
+    background-color: white;
+    margin-top: 5px;
+}
+.deal-day .side-div img{
+    width: 290px;
+    height: 350px;
+    position: static;
+    margin: 5px;
+}
+
+/* Banner Ads */
+.ads-div{
+    display: flex;
+    margin: 2px;
+    width: 100%;
+}
+.ads-div .child-div{
+    padding: 10px;
+    margin: 5px;
+    background-color: #F5F5F5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Top Style Discount Section */
+.top-style-discount{
+    display: block;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.top-style-discount .deals-heading{
+    display: flex ;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 15px;
+}
+.top-style-discount .show-deals{
+    display: flex ;
+    width: 100%;
+}
+.top-style-discount  .deals-heading button{
+    border: none;
+    text-transform: uppercase;
+    background-color: royalblue;
+    color: white;
+    height: 40px;
+    width: 100px;
+    padding: 5px;
+    position: static;
+    float: right;
+    margin-left: 1099px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+
+}
+.top-style-discount .deals-heading h1{
+    padding-left: 20px;
+    text-transform: capitalize;
+    font-size: 23px;
+}
+.top-style-discount .show-deals{
+    display: flex;
+    width: 100%;
+}
+.top-style-discount  .show-deals .deal-child {
+    padding: 20px 30px 0 30px;
+
+}
+.top-style-discount  .show-deals .deal-child img {
+
+    margin-bottom: 15px;
+}
+.top-style-discount  .show-deals .deal-child:hover img {
+
+    margin-bottom: 15px;
+    transform: scale(1.1);
+    animation-fill-mode: forwards;
+    animation: img-pop 55ms ease;
+
+}
+.top-style-discount  .show-deals .deal-child h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.top-style-discount  .show-deals .deal-child .green {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 13px;
+    color:green;
+    line-height: 3;
+}
+.top-style-discount  .show-deals .deal-child .grey {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 13px;
+    color:grey;
+}
+
+/* Footer */
+footer{
+    background-color: white;
+    padding: 50px 0px 0px 0px;
+}
+
+footer h1{
+    font-size: 16px;
+    color: gray;
+    font-weight: 100;
+    padding: 20px;
+}
+
+footer .footer-paralinks{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    line-height: 1.5;
+    font-size: 12px;
+}
+footer .footer-paralinks .footer-span{
+    color:gray;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+footer .footer-paralinks a{
+    text-decoration: none;
+    color: #343d52;
+    font-size: 13px;
+}
+footer .faq {
+    padding: 30px 0px 20px 0px;
+}
+footer .faq .faq-heading {
+   color: #616161;
+    font-weight: 600;
+    font-size: 16px;
+}
+footer .faq .faq-para {
+    color: #BEBEBE;
+    padding-left: 20px;
+    font-size: 12px;
+}
+
+footer .lower-footer{
+    background-color: #00022e;
+    color: white;
+    display: block;
+    padding: 30px;
+}
+footer .lower-footer .upper-div{
+    display: flex;
+    width: 100%;
+}
+footer .lower-footer .upper-div .lower-links{
+    padding: 20px 65px 20px 20px;
+    line-height: 1.5;
+}
+footer .lower-footer .upper-div .lower-links:first-child{
+    padding-left:4% ;
+
+}
+
+footer .lower-footer .upper-div .lower-links a{
+   text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+footer .lower-footer .upper-div .lower-links p:first-child {
+    text-transform: uppercase;
+    color: gray;
+    font-size: 13px;
+
+}
+.fa-bars:before{
+    display: none;
+}
+.fa-shopping-cart:before{
+    display: none;
+}
+
+/* Responsive layout for phones */
+@media only screen and (max-width: 500px) {
+    .navbar{
+        padding: 0px 0px 12px 0px!important;
+    }
+    .navbar .navbar-icons {
+        display: none!important;
+    }
+    .navbar img {
+       display: none;
+    }
+    .fa-search:before {
+        color: royalblue;
+      padding: 10px;
+
+    }
+    .fa-shopping-cart:before{
+        display: block;
+        color: white;
+        font-size: 25px;
+        padding: 13px 0px 0px 10px!important;
+    }
+    .fa-bars:before{
+        display: block;
+        font-size: 25px;
+        padding: 10px 10px 0px 10px;
+        color: white;
+    }
+    .navbar .search-container form input[type=text] {
+        width: 230px!important;
+        height: 40px!important;
+        border: none;
+        background: white;
+        padding: 0px 0px 0px 10px!important;
+    }
+    .lower-bar{
+        margin: 15.7% 0% 0% 0% !important;
+        padding-left: 0%;
+        padding-bottom: 0px;
+        overflow-x: scroll;
+    }
+    .lower-bar .category {
+         padding: 0px;
+        min-width: 20% !important;
+        height: 100px!important;
+    }
+    .lower-bar .category h1 {
+        font-size: 9px!important;
+    }
+    .banner-ads img {
+        width: 100%;
+        margin-top: 3px;
+        height: 200px!important;
+    }
+    .deal-day .side-div {
+        display: none;
+    }
+    .deal-day {
+        margin-bottom: 0px;
+    }
+    .deal-day {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .deal-day .main-div .deals-heading button {
+        border: none;
+        background-color: royalblue;
+        color: white;
+        font-size: 10px;
+        height: 30px;
+        width: 62px!important;
+        padding: 2px;
+        margin-left: 75px!important;
+        box-shadow: none;
+    }
+    .deal-day .main-div h1 {
+        padding-left: 2px;
+        font-size: 14px;
+    }
+    .deal-day .main-div p {
+        letter-spacing: 0px;
+        font-size: 10px;
+    }
+    .fa-clock-o:before {
+        padding-left: 12px;
+        font-size: 14px;
+    }
+    .deal-day .main-div {
+        margin: 0px;
+    }
+    .deal-day .main-div .show-deals {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .deal-day .main-div .show-deals .deal-child {
+        min-width: 50% !important;
+        padding: 23px 0px 10px 0px;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        border-right: 1px solid rgba(0,0,0,.1);
+
+    }
+    .deal-day .main-div .show-deals .deal-child img {
+        margin-bottom: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .deal-day .main-div .show-deals .deal-child:nth-child(2){
+        border-right: none;
+    }
+    .deal-day .main-div .show-deals .deal-child:nth-child(4){
+        border-right: none;
+    }
+    .deal-day .main-div .show-deals .deal-child:nth-child(5){
+        border-bottom: none;
+    }
+    .deal-day .main-div .show-deals .deal-child:nth-child(6){
+        border-right: none;
+        border-bottom: none;
+    }
+    .ads-div {
+        flex-direction: column;
+    }
+    .ads-div .child-div {
+        padding: 0px;
+        margin: 0px;
+        box-shadow: none;
+    }
+    .ads-div .child-div img{
+        width: 370px !important;
+    }
+
+    .top-style-discount .deals-heading h1{
+        padding-left: 10px;
+        font-size: 17px;
+        padding-top: 8px;
+    }
+    .top-style-discount .deals-heading button{
+        height: 35px;
+        width: 80px;
+        font-size: 10px;
+        margin-left: 70px!important;
+        box-shadow: none;
+    }
+    .top-style-discount {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .top-style-discount .show-deals{
+        flex-wrap: wrap!important;
+        flex-direction: row;
+    }
+    .top-style-discount .show-deals .deal-child img {
+        margin-bottom: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .top-style-discount .show-deals .deal-child {
+        width: 50% !important;
+        padding: 20px 0 20px 0;
+        border-right: 1px solid rgba(0,0,0,.1);
+        border-bottom: 1px solid rgba(0,0,0,.1);
+    }
+    .top-style-discount .show-deals .deal-child:nth-child(2){
+        border-right: none;
+    }
+    .top-style-discount .show-deals .deal-child:nth-child(4){
+        border-right: none;
+    }
+    .top-style-discount .show-deals .deal-child:nth-child(6){
+        border-right: none;
+    }
+    .top-style-discount .show-deals .deal-child:nth-child(7){
+
+        border-bottom: none;
+    }
+    .top-style-discount .show-deals .deal-child:nth-child(8){
+        border-right: none;
+        border-bottom: none;
+    }
+    footer .lower-footer{
+        display: none;
+    }
+
+
+    /* Responsive layout for product page */
+
+    .product-header {
+       display: none!important;
+    }
+    .product-shirt {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+        margin-bottom: 0px!important;
+    }
+    .product-shirt .product-image {
+        width: 100%!important;
+        margin-left: 0px!important;
+        margin-top: 0px!important;
+    }
+    .product-shirt .product-description {
+        width: 100%!important;
+        margin-left: 10px!important;
+        margin-top: 30px!important;
+    }
+
+
+}
+
+/* Responsive layout for tablets */
+@media only screen and (max-width: 1100px){
+    .navbar img{
+        margin-left: 60px;
+    }
+    .navbar .search-container form input[type=text]{
+        width: 340px;
+    }
+    .navbar .navbar-icons{
+        margin-left: 2%;
+    }
+    .lower-bar{
+        margin: 5.8% 0% 0% 0%;
+    }
+    .deal-day .main-div .deals-heading button{
+        margin-left: 450px
+    ;
+    }
+    .deal-day .side-div{
+        display: none;
+    }
+    .ads-div{
+        margin: 0px;
+    }
+    .ads-div .child-div{
+        margin: 0px;
+        box-shadow: none;
+    }
+    .ads-div .child-div img{
+        width: 320px;
+        height: 260px!important;
+    }
+    .ads-div .child-div:last-child {
+        margin-left: 0px!important;
+    }
+    .top-style-discount .deals-heading button{
+        margin-left: 629px;
+    }
+    .top-style-discount .show-deals{
+        flex-wrap: wrap;
+    }
+    .top-style-discount .show-deals .deal-child{
+        width: 25%;
+    }
+    .top-style-discount .show-deals .deal-child img{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    footer .lower-footer .upper-div .lower-links{
+        padding: 20px 15px 20px 20px;
+    }
+
+    /* Responsive layout for product */
+
+    .product-header{
+        display: none!important;
+    }
+    .product-shirt {
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+        margin-bottom: 0px!important;
+        margin-top: 40px;
+    }
+    .product-shirt .product-image {
+        margin-left: 0px!important;
+        margin-top: 0px!important;
+    }
+    .product-shirt .product-description {
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+}
+
+/* Responsive layout for tablets */
+@media only screen and (max-width: 800px){
+    .navbar img{
+        margin-left: 30px;
+    }
+    .navbar .search-container form input[type=text]{
+        width: 180px;
+    }
+    .navbar .navbar-icons a{
+        padding: 0px 10px;
+    }
+    .navbar .navbar-icons{
+        margin-left: 2%;
+    }
+    .lower-bar{
+        margin: 7.6% 0% 0% 0%;
+        padding-left: 0%;
+        padding-bottom: 0px;
+        overflow-x: scroll;
+    }
+    .lower-bar .category {
+        padding: 0px;
+        min-width: 12%;
+        height: 100px;
+    }
+    .lower-bar .category h1 {
+        font-size: 9px;
+    }
+    .deal-day .main-div{
+        margin:0px
+    }
+    .deal-day .main-div .show-deals{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .deal-day .main-div .show-deals .deal-child{
+        width: 33.3%;
+        padding-bottom: 20px;
+    }
+    .deal-day .main-div .show-deals .deal-child img {
+
+        margin-left: auto;
+        display: block;
+        margin-right: auto;
+    }
+    .deal-day .main-div .deals-heading button{
+        margin-left: 200px;
+    }
+    .deal-day .side-div{
+        display: none;
+    }
+    .ads-div{
+        margin: 0px;
+        flex-wrap: wrap;
+        background-color: white;
+    }
+    .ads-div .child-div{
+        margin: 0px;
+        box-shadow: none;
+    }
+    .ads-div .child-div img{
+        width: 350px;
+        height: 260px;
+    }
+    .ads-div .child-div:last-child{
+        margin-left: 170px;
+    }
+    .top-style-discount .deals-heading button{
+        margin-left: 409px;
+    }
+    .top-style-discount .show-deals{
+        flex-wrap: wrap;
+    }
+    .top-style-discount .show-deals .deal-child{
+        width: 25%;
+    }
+    .top-style-discount .show-deals .deal-child img{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    footer .lower-footer .upper-div .lower-links{
+        padding: 20px 15px 20px 20px;
+    }
+
+    /* Responsive layout for product page */
+
+    .product-header {
+        display: none!important;
+    }
+    .product-shirt {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+        margin-bottom: 0px!important;
+    }
+    .product-shirt .product-image {
+        width: 100%!important;
+        margin-left: 0px!important;
+        margin-top: 0px!important;
+    }
+    .product-shirt .product-description {
+        width: 100%!important;
+        margin-left: 10px!important;
+        margin-top: 30px!important;
+    }
+
+}
+
+
+
+
+
+
+/* Product Page CSS */
+
+.product-header{
+    display: flex;
+    background-color: white;
+    color: black;
+    height: 60px;
+    margin-top: 3.2%;
+    box-shadow:  0 1px 1px 0 rgba(0, 0, 0, 0.16);
+}
+.product-header a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 20px 40px 0px 10px;
+
+}
+.product-header a:first-child{
+    margin-left: 11%;
+}
+.product-shirt{
+    display: flex;
+    background-color: white;
+    margin-left: 6%;
+    margin-right: 6%;
+
+    padding-bottom: 50px;
+}
+.product-shirt .product-image img{
+    width: 450px;
+    height: 500px;
+    margin-top: 10px;
+}
+.product-shirt .product-image {
+    width: 40%;
+    margin-left: 20px;
+}
+.product-shirt .product-button{
+    display: flex;
+}
+.product-shirt .product-button button:first-child {
+    width: 220px;
+    height: 50px;
+    font-weight: 600;
+    background-color: aliceblue;
+    color: gray;
+    font-size: 15px;
+    margin-right: 10px;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.product-shirt .product-button button:last-child {
+    width: 220px;
+    height: 50px;
+    background-color: orange;
+    color: white;
+    font-size: 15px;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.product-shirt .product-description {
+    width: 60%;
+    margin-top: 50px;
+}
+.product-shirt .product-description h1{
+    font-size: 17px;
+    font-weight: 100;
+    color: black;
+}
+.product-shirt .product-description h1 span{
+    color: grey;
+}
+.product-shirt .product-description p strike{
+    color: gray;
+    font-size: 16px;
+    font-weight: 100;
+}
+.product-shirt .product-description p {
+    color: black;
+    font-size: 29px;
+    font-weight: 600;
+}
+.product-shirt .product-description .rating {
+   display: flex;
+    margin-top: 10px;
+}
+.product-shirt .product-description .rating p{
+    font-size: 15px;
+    color: gray;
+    margin-top: 4px;
+}
+
+.product-shirt .product-description .rating button {
+    background-color: green;
+    border: none;
+    border-radius: 30px;
+    width: 60px;
+    height: 30px;
+    color: white;
+    font-weight: 600;
+}
+.product-shirt .product-description .available-offers p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 2;
+}
+.product-shirt .product-description .available-offers p i {
+   color: limegreen;
+    font-size: 19px;
+}
+.product-shirt .product-description .available-offers p span {
+    color: blue;
+   cursor: pointer;
+    font-weight: 600;
+}
+.product-shirt .product-description form input[type=text] {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 3px solid blue;
+    height: 30px;
+}
+.product-shirt .product-description form {
+   line-height: 2;
+}
+
+.product-shirt .product-description form label{
+    color: gray;
+    font-size: 17px;
+    font-weight: 600;
+}
+.product-shirt .product-description .size{
+   display: flex;
+}
+.product-shirt .product-description .size h1{
+    color: gray;
+    padding-right: 90px;
+}
+.product-shirt .product-description p span{
+    font-size: 16px;
+    color: green;
+}
+.product-shirt .product-description p span i{
+    color: gray;
+}
+.product-shirt .product-description .size .size-button button{
+    width: 45px;
+    height: 40px;
+    background-color: white;
+    border-color: #8080804d;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 19px;
+}
+.product-shirt .product-description .size .size-button button:focus{
+    border-color: blue!important;
+    color: blue;
+}
+.product-shirt .product-description .size .size-button button:hover{
+    border-color: blue!important;
+    color: blue;
+}
+.product-shirt .product-description .size .size-button {
+    padding-right: 30px;
+}
+.product-shirt .product-description .size a {
+   text-decoration: none;
+    padding-top: 10px;
+    font-weight: 600;
+}
+.product-shirt .product-description .specification {
+    display: flex;
+}
+.product-shirt .product-description .specification h1 {
+    color: gray;
+    padding-right: 30px;
+}
+.product-shirt .product-description .specification p {
+    font-size: 15px;
+    font-weight: 100;
+}
+.product-shirt .product-description .seller {
+   display: flex;
+}
+.product-shirt .product-description .seller h1 {
+    color: gray;
+    padding-right: 80px;
+}
+.product-shirt .product-description .seller p {
+    color: blue;
+    font-size: 15px;
+}
+.product-shirt .product-description .seller button {
+    background-color: blue;
+    border: none;
+    border-radius: 30px;
+    width: 60px;
+    height: 30px;
+    color: white;
+    font-weight: 600;
+}
+.product-shirt .product-description .return p {
+    font-size: 15px;
+    font-weight: 100;
+    padding-left: 120px;
+    text-transform: capitalize;
+}
+.product-shirt .product-description .return p i {
+    color: gray;
+  cursor: pointer;
+}
+.product-shirt .product-description .product-detail h1 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.product-shirt .product-description .product-detail p {
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 100;
+}
+.product-shirt .product-description .product-detail p span {
+   color: gray;
+    padding-right: 190px;
+
+}
+
+.product-shirt .product-description .product-detail{
+    line-height: 3;
+
+}
+
+
